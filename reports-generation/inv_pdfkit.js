@@ -27,8 +27,8 @@ function fillPlaceholders(template, context) {
     for (const k of keys) {
       if (val && typeof val === 'object' && k in val) {
         val = val[k];
-      } else {
-        return match;
+      // } else {
+        // return match;
       }
     }
     return val;
