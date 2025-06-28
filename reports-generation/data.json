@@ -1,0 +1,33 @@
+{
+  "invoices": [
+    {
+      "header": {
+        "invoice_number": "INV-1001",
+        "date": "2024-06-01",
+        "customer_name": "John Doe",
+        "customer_address": "123 Main St, Cityville, Country",
+        "due_date": "2024-06-15"
+      },
+      "details": [
+        {
+          "description": "Widget A",
+          "quantity": 2,
+          "unit_price": 25.00,
+          "total": 50.00
+        },
+        {
+          "description": "Widget B",
+          "quantity": 1,
+          "unit_price": 40.00,
+          "total": 40.00
+        },
+        {
+          "description": "Service Fee",
+          "quantity": 1,
+          "unit_price": 10.00,
+          "total": 10.00
+        }
+      ]
+    }
+  ]
+} 
