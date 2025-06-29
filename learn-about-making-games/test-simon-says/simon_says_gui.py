@@ -31,9 +31,13 @@ class SimonSaysGUI:
         frame.pack(pady=10)
         # Create 2x2 grid layout
         positions = [(0, 0), (0, 1), (1, 0), (1, 1)]  # 2x2 grid positions
+        color_names = {1: "RED", 2: "GREEN", 3: "BLUE", 4: "YELLOW"}
         for i, (num, color) in enumerate(COLORS.items()):
             row, col = positions[i]
+            # Set text color for contrast
+            fg = 'black' if color == 'yellow' else 'white'
             btn = tk.Button(frame, bg=color, width=12, height=6,
+                            text=color_names[num], fg=fg, font=("Arial", 14, "bold"),
                             command=lambda n=num: self.user_click(n),
                             state="disabled", relief="raised", borderwidth=4)
             btn.grid(row=row, column=col, padx=10, pady=10)
